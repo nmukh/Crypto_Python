@@ -42,7 +42,8 @@ def hill():
         A = random_integers(-10,10,(blocks,blocks))
         determinant = int(round(det(A),0))%26
     return A
-
+       
+#need to write general adjugate matrix for nxn case
 def adj(A):
     return array([[A[1][1],-1*A[0][1]],[-1*A[1][0],A[0][0]]])
 
